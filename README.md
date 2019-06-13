@@ -12,6 +12,7 @@ Storm Warriors is a card style battle game.
 ## Card types
 
 **Warriors**
+
 Warriors are enhanced by one of the following base _Storm_ elements
 - Lightning
 - Thunder
@@ -86,37 +87,29 @@ Roll __1d8__.  The player with the lowest number goes first choosing a Warrior t
 **For Each Turn**
 
 Player starts by picking __2 cards__ from the __Play Card Deck__. The cards can be saved or applied immediately to the game.
-Roll __1d20__ and add it to the Warriors Attack value.
-Defending player rolls __1d20__ and adds it to the Defence value.
+You may play from 0 to 2 cards per turn.
+To attack, roll a __1d20__ and add it to the Warriors Attack value.
+The defending player then rolls __1d20__ defence value and adds it to their Warrior's Defence value.
+If the attack value is equal, nothing happens and no retaliation can be performed; this ends the turn.
 If the attack is higher, then the Attack was a success otherwise the Attack failed.
-If the attack was successful, roll __1d20__ to determine the __Damage__. This is taken from the opponents health.
-If the attack failed, the defending player has a chance to retaliate.  Repeat the process for an attack but add the __1d20__ to the retaliate score.
-If the retaliation was a success, roll __1d8__ to determine the __Damage__ and remove from the opponents health, otherwise the turn is over.
+If the attack was successful, player rolls a __1d20__ to determine the attack __Damage__. This is deducted from the opponents health.
+If the attack failed, the defending player then has a chance to retaliate. Opponent performs the same process  as an attack but the __1d20__ value is added to the retaliate score instead.
+If the retaliation was a success, roll a __1d8__ to determine the retaliation __Damage__ and remove it from the attacking players health, otherwise the turn is over.
+Element cards for a Special Attack are discarded after the turn even if the attack failed.
 
-Once a Warriors health is 0 or below, the Warriors is removed from the battle and another, if available, can join in their place.
+Once a Warriors health reaches 0 or below, the Warriors is removed from the battle and another, if available, can join in their place.
 
 ## Base Deck
 
 #### Warriors
 
-| Name                  | Storm Type    | Health    | Defence | Attach | Retaliation     | Special Attacks                                  |
+| Name                  | Storm Type    | Health    | Defence | Attack | Retaliation     | Special Attacks                                  |
 | ----                  | ----------    | ------    | ------- | ------ | -----------     | ---------------                                  |
 | Brandon Godsroar      | Thunder       | 37        | 44      | 23     | 18              | Harrowing Clap, Earth Shatter, Charged Roar      |
 | Ethan Shiverblade     | Hailstones    | 32        | 37      | 31     | 20              | Hardened Stones, Frozen Blast, Boulder Crush     |       
 | Georgia Wavecutter    | Rain          | 28        | 49      | 25     | 22              | Drowning Deluge, Soaked Ground, Protective Wave  |
 | Conor Brightstrike    | Lightning     | 44        | 36      | 24     | 17              | Arc Blade, Electric Curtain, Orb Shocker         |
 | Griffin Hammerstrong  | Wind          | 49        | 38      | 26     | 15              | Blinding Rush, Tornado Strike, Rushed Kick       |
-
-#### Weather
-
-| Storm Type        | Level     | Affect                                           |
-| ----              | ----      | ----                                             |
-| Lightning         | 1         | Attack value + 8                                 |
-| Lightning         | 2         | Opponents Defence - 10                           |
-| Lightning         | 3         | Opponents Defence - 12, Damage + 8               |
-| Thunder           | 1         | Attack value + 4, Defence + 4                    |
-| Thunder           | 2         | Opponents Defence - 6, Retaliation on fail       |
-| Thunder           | 3         | Opponents Defence - 8, Damage + 12               |
 
 #### Items
 
@@ -129,4 +122,10 @@ Once a Warriors health is 0 or below, the Warriors is removed from the battle an
 | Soldiers Mace         | Attack + 6                                       |
 | Knight's Visor        | Defence + 8                                      |
 
+#### Special Attacks
 
+| Name                  | Element cost      | Affect                                |
+| ----                  | ----              | ----                                  |
+| Harrowing Clap        | 3                 | + 1d8 damage                          |
+| Earth Shatter         | 6                 | + 1d20 damage, +8 Attack              |
+| Charged Roar          | 12                | + 1d20 damage, +12 Attack             |
