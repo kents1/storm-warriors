@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<decks>
+    <deck name="Base Deck">
+        <card type="ELEMENT" value="2" elementalType="THUNDER" />
+    </deck>
+</decks>
