@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
+import static java.util.stream.Collectors.toList;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class Deck {
@@ -17,5 +19,13 @@ public class Deck {
 
     @XmlElement(name = "card")
     private List<Card> cards;
+
+    public void removeCards(final CardType... types) {
+        if (cards != null && cards.size() > 0) {
+            this.cards = cards.stream()
+                .filter(card -> !card.isOneOf(types))
+                .collect(toList());
+        }
+    }
 
 }

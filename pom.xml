@@ -31,7 +31,7 @@
     </properties>
 
     <dependencies>
-        <!-- Game Engine -->
+        <!-- GameInstance Engine -->
         <dependency>
             <groupId>de.gurkenlabs</groupId>
             <artifactId>litiengine</artifactId>

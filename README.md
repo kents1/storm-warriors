@@ -1,6 +1,6 @@
 # Storm Warriors
 
-Storm Warriors is a card style battle game.
+Storm Warriors is a card style battle gameInstance.
 
 ## Requirements
 - Pack of base Storm Warrior Cards (minimum of 6)
@@ -76,7 +76,7 @@ Items can be removed to place better items but the card must be discarded from y
 
 ## Game Mechanics
 
-The game is designed for two players.
+The gameInstance is designed for two players.
 
 Each player takes __3 Warrior__ Cards and places them face up on the board.
 
@@ -86,7 +86,7 @@ Roll __1d8__.  The player with the lowest number goes first choosing a Warrior t
 
 **For Each Turn**
 
-Player starts by picking __2 cards__ from the __Play Card Deck__. The cards can be saved or applied immediately to the game.
+Player starts by picking __2 cards__ from the __Play Card Deck__. The cards can be saved or applied immediately to the gameInstance.
 You may play from 0 to 2 cards per turn.
 To attack, roll a __1d20__ and add it to the Warriors Attack value.
 The defending player then rolls __1d20__ defence value and adds it to their Warrior's Defence value.
