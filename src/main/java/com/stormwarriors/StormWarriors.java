@@ -1,20 +1,22 @@
 package com.stormwarriors;
 
+import com.stormwarriors.controller.GameManager;
 import com.stormwarriors.game.GameInstance;
-import com.stormwarriors.controller.GameStateManager;
-import com.stormwarriors.ui.LITIengineUI;
+import com.stormwarriors.input.InputController;
+import com.stormwarriors.input.JMonkeyEngineInputController;
+import com.stormwarriors.ui.JMonkeyEngineUI;
 import com.stormwarriors.ui.UI;
 
 public class StormWarriors {
 
     public static void main(String[] args) {
-
         final GameInstance gameInstance = new GameInstance();
-        final UI ui = new LITIengineUI(gameInstance);
 
-        final GameStateManager gameStateManager = new GameStateManager(gameInstance, ui);
-        gameStateManager.init(args);
-        gameStateManager.startGame();
+        final InputController inputController = new JMonkeyEngineInputController();
+        final GameManager gameManager = new GameManager(gameInstance, inputController);
+
+        gameManager.init(args);
+        gameManager.startGame();
     }
 
 }

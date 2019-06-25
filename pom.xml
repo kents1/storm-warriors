@@ -15,6 +15,7 @@
 
         <!-- Core versions -->
         <java.version>11</java.version>
+        <jme3.version>3.2.3-stable</jme3.version>
 
         <!-- Library versions -->
         <litiengine.version>0.4.17</litiengine.version>
@@ -31,11 +32,22 @@
     </properties>
 
     <dependencies>
-        <!-- GameInstance Engine -->
+        <!-- Game Engine -->
         <dependency>
-            <groupId>de.gurkenlabs</groupId>
-            <artifactId>litiengine</artifactId>
-            <version>${litiengine.version}</version>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-core</artifactId>
+            <version>${jme3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-desktop</artifactId>
+            <version>${jme3.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-lwjgl3</artifactId>
+            <version>${jme3.version}</version>
         </dependency>
 
         <!-- Java XML Binding -->
@@ -106,5 +118,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
 
 </project>

@@ -1,7 +1,8 @@
 package com.stormwarriors.ui;
 
-public final class ScreenName {
+final class ScreenName {
 
-    public static final String WAIT_FOR_PLAYERS = "waitForPlayers";
+    static final String SELECT_DECK = "selectDeck";
+    static final String WAIT_FOR_PLAYERS = "waitForPlayers";
 
 }
